@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cafetería - precios de los cafes </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat&family=Pacifico:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css"> 
+
+</head>
+
+<body>
+  <!-- header -->
+  <header id="header" class="header background-general">
+    <div class="contenedor">
+<!-- style="background: #3F2A18;" estilos en linea, no recomendado -->
+    <!-- imagen -->
+    <figure class="logotipo">
+      <!-- etiqueta para logotipo -->
+      <!-- <img src="img/logo.png" width="60" alt="logo cafeteria" /> -->
+      <span>CafeTime</span>
+      <!-- se usa la ruta relativa  y al establecer el ancho la altura se calcula automaticamnete-->
+    </figure>
+
+    <!-- opciones (home, cafes y precios) -->
+    <nav class="menu">
+      <!-- menu -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#cafes">Cafés</a></li>
+        <li><a href="precios.html">Precios</a></li>
+      </ul>
+
+    </nav>
+    </div>
+    
+  </header>
+  <!-- header -->
+
+  <!-- contenido -->
+  <main>
+    
+    <section class="tabla" >
+      <div class="contenedor">
+        <div class="titulo-precio">
+          <span>Precios CafeTime</span>
+          <img src="img/coffetimeprecios1.png" alt="cafecito" width="100">
+        </div>
+        <table>
+        
+          <tbody>
+            <tr>
+              <td>Capuccino <br> <i>Sabor Intenso y Exquisito</i></td>
+              <td> <div class="precio">$1000</div></td>
+            </tr>
+        
+            <tr>
+              <td>Mocaccino <br><i>Delicioso Cafe con Sabor Chocolate</i></td>
+              <td> <div class="precio">$1200</div></td>
+            </tr>
+        
+            <tr>
+              <td>Vanilla Late <br><i>Cremoso y Delicioso Café con Sabor a Vanilla</i></td>
+              <td> <div class="precio">$1100</div></td>
+            </tr>
+
+            <tr>
+              <td>Frappe <br><i>Lorem ipsum dolor sit amet consectetur.</i></td>
+              <td> <div class="precio">$1100</div></td>
+            </tr>
+
+            <tr>
+              <td>Macciatto <br><i>Lorem ipsum dolor sit amet consectetur.</i></td>
+              <td> <div class="precio">$1100</div></td>
+            </tr>
+
+            <tr>
+              <td>Americano <br><i>Lorem ipsum dolor sit amet consectetur.</i></td>
+              <td> <div class="precio">$900</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <!-- contenido -->
+
+  <!-- footer -->
+  <footer class="footer">
+
+    <div class="contenedor">
+
+      <div class="contacto">
+
+        <!-- imagen -->
+        <img src="img/imagenfooter.png" alt="imagen footer" width="300" />
+
+        <!-- telefono -->
+        <a href="tel:+569999999999"> <strong>Teléfono</strong> <span class>99999999</span> </a>
+
+        <!-- correo -->
+        <a href="mailto:contacto@cafetimes.cl"> <strong>E-mail</strong> <span>contacto@cafetimes.cl</span> </a>
+      </div>
+
+      <form  class="formulario" method="get" >
+        <div class="col1">
+          <!-- formulario nombre  -->
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required name="nombre" />
+
+          <!-- formulario e-mail -->
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required name="email" />
+
+          <!-- radio buttons sexo -->
+          <div class="generos">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="genero" value="mujer" required> Mujer
+            </label>
+            <label for="hombre">
+              <input type="radio" id="hombre" name="genero" required value="hombre"> Hombre
+            </label>
+          </div>
+
+          <div class="intereses">
+            <label for="cotizacion">
+              <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion">Cotizacion
+            </label>
+
+            <label for="reclamos">
+              <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+            </label>
+
+            <label for="observaciones">
+              <input type="checkbox" id="observaciones" name="intereses" value="observaciones">Observaciones
+            </label>
+
+            <label for="otros">
+              <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+            </label>
+          </div>
+        </div>
+
+        <div class="col2">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" cols="27" rows="7"></textarea>
+          <input class="button" type="submit" value="Enviar">
+        </div>
+        
+      </form>
+    </div>
+  </footer>
+  <!-- footer -->
+</body>
+
+</html>
+
+
+
+
+
+<!-- <table> -->
+  <!-- <thead> -->
+    <!-- <tr> fila -->
+      <!-- <th>Productos</th> -->
+      <!-- <th>Precios</th> -->
+      <!-- <th>Descripcion</th> -->
+    <!-- </tr> -->
+  <!-- </thead> -->
+
+  <!-- <tbody> -->
+    <!-- <tr> -->
+      <!-- <td>Capuccino</td> -->
+      <!-- <td>$1000</td> -->
+      <!-- <td>Sabor Intenso y Exquisito</td> -->
+    <!-- </tr> -->
+
+    <!-- <tr> -->
+      <!-- <td>Mocaccino</td> -->
+      <!-- <td>$750</td> -->
+      <!-- <td>Delicioso Cafe con Sabor Chocolate</td> -->
+    <!-- </tr> -->
+
+    <!-- <tr> -->
+      <!-- <td>Vanilla Late</td> -->
+      <!-- <td>$850</td> -->
+      <!-- <td>Cremoso y Delicioso Café con Sabor a Vanilla</td> -->
+    <!-- </tr> -->
+  <!-- </tbody> -->
+<!-- </table> -->

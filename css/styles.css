@@ -1,0 +1,353 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+main{
+  flex: 1;
+}
+
+.button {
+  background: #9c540c;
+  border-radius: 12px;
+  /* 8px arriba y abajo 12px izq y derecha*/
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  border: none; /* hace que el botn se vea hermoso*/
+  text-decoration:none;
+  font-size: 16px;
+  /* gradiente -> derecha hacia izquierda, con colores de degradado */
+  background: linear-gradient(to left, #7c430a, #dd944c);
+}
+
+label{
+  margin-top: 10px;
+}
+input, textarea{
+  outline: 0;
+  border-radius: 7px;
+  border: 1px solid #835835;
+}
+input:focus, textarea:focus {
+  background: #fce3c3;
+}
+
+input[type='radio']:checked::after{
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #836123;
+  content:'';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+
+}
+
+input[type='checkbox']:checked::after{
+width: 10px;
+height: 10px;
+position: relative;
+/* top: 0px;
+left: 0px; */
+background-color: #977639;
+content: '';
+display: inline-block;
+visibility: visible;
+border: 2px solid white;
+/* border-radius: 10px; */
+}
+
+.contenedor {
+  width: 800px;
+  margin: auto;
+  /* margin-bottom: 70px; */
+  position: relative;
+}
+
+.background-general{
+  background: #502902;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 4);height: 85px;
+  color: white;
+}
+.titulo {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+
+.title-a {
+  font-size: 24px;
+  margin-top: 0px;
+  
+}
+
+.title-b {
+  font-size: 50px ;
+  margin-bottom: 20px;
+}
+
+.cafes {
+  color: #412b19;
+  margin-bottom: 60px;
+  /*width: 800px;
+  margin: auto*/
+  
+}
+
+/* selector descendente */
+
+.cafes h2 {
+font-size: 35px;
+font-family: 'Montserrat', sans-serif;
+
+
+}
+
+/* el background puede ser un color o imagen*/
+
+.portada {
+  background-image:url(../img/background.jpg) ;
+  background-size: cover;
+  color:white;
+  padding:20px;
+  /*width: 800px;
+  margin: auto;
+  */
+  height: 500px;
+}
+
+/* .portada button {
+  margin-bottom: 70px;
+
+} */
+
+
+
+.menu {
+display: inline-block;
+font-size: 24px;
+position: absolute;
+margin-left: 30px;
+right: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+  
+}
+
+.menu a {
+  color: white;
+  right: 20px;
+  /* quitar subrayado hipervinculos*/
+  text-decoration: none;
+  
+}
+
+.logotipo {
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  margin-left: 0;
+  margin-top: -12px;
+}
+
+.header {
+  /*width: 800px;
+  margin:auto*/
+  position: relative;
+  
+
+}
+
+.footer {
+  background: #C29B61;
+  padding: 50px 10px;
+
+}
+.cafe {
+  padding: 10px;
+  margin: 10px 10px 40px 10px;
+  /* border: 1px solid #412b19; */
+  border-radius: 8px;
+  /*overflow: hidden;    sirve para que no se desborden nuestras imagenes */
+  /* desplazamiento eje x,  luego eje y, luego desenfoque, expansion de la sombra, color */ 
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 4) ;
+}
+
+.cafe ol {
+  padding: 0;
+}
+
+.cafe.granoscafe {
+height: 190px;
+
+}
+.right {
+  float: right;
+  position: relative;
+  top: -127px ;
+}
+
+.left {
+  float: left;
+  position: relative;
+  /* top: 80px;  <- esto se uso antes de crear el .cafe.granoscafe*/  
+  
+  
+}
+
+/* una buena practica es tener los estilos centralzados*/
+
+.contenedor-cafe-a {
+  position: relative;
+  bottom: 36px;
+  padding-left: 20px;
+}
+
+.contenedor-cafe-b {
+position: relative;
+bottom: 85px;
+margin-left: 370px;
+}
+
+
+/*  elemento padre -> (position relative)*/
+/*elemento hijo -> (position absolute) */
+
+
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+} 
+
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display: block  
+}
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+/* .contacto span { */
+/*    display: block; */
+/* } */ 
+
+.footer .contenedor{
+  display:flex;
+  justify-content: space-between;
+  /* padding: 50px 10px; */
+}
+ 
+.formulario{
+  display: flex;
+  color: white;
+  width: 423px;
+  /* padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 50px;  */
+
+  /* padding: 50px 10px; */
+  
+}
+
+.formulario label, .generos, .intereses{
+  margin-bottom: 10px;
+  
+}
+
+/* vamos a dar clases a las 2 columnas del footer*/
+
+.col1, .col2{
+display: flex;
+flex-direction: column;
+  
+}
+
+.col1{
+  margin-right: 15px;
+}
+
+.col2{
+  align-items: flex-start;
+}
+.col2 .button{
+  margin-top: 15px;
+}
+
+.intereses label{
+font-size: 12px;
+}
+
+.generos{
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+table {
+  width: 100%; /*toma el 100% del padre contenedor*/
+  margin-bottom: 60px;
+}
+
+th {
+  background: #977639;
+  color: white;
+  padding: 10px 20px;
+}
+
+td{
+  padding: 20px;
+}
+
+table,td, th {
+  font-size: 20px;
+  /* border: 1px solid #835835; */
+  border: 0;
+  /* border-collapse:collapse; */
+  /* padding: 10px 25px;  -> lo agregue yo*/
+}
+
+i{
+  font-size: 12px;
+}
+.precio{
+  font-size: 12px;
+  background: #9c540c;
+  color: white;
+  text-align: center;
+  padding: 15px 7px;
+  border-radius: 50%;
+  width: 35px;
+}
+
+.titulo-precio{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  color: #412b19;
+  font-size: 45px;
+  font-family: 'Pacifico',cursive;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+
+.tabla{
+  padding: 50px 0;
+}
