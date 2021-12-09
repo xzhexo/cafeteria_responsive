@@ -1,0 +1,31 @@
+/* 768 para tablets y esta dentro para los 800xp en los que trabajaremos */
+
+@media screen and(max-width: 800px) {
+  
+  /* portada */
+
+  .titulo {
+    font-size: 45px;
+    margin-top:0;
+  }
+
+  .title-a{
+    font-size: 18px;
+  }
+
+  .portada{
+    height: auto;
+  }
+
+  .portada.button{
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  /* fin de portada */
+
+  /* cafes */
+
+  /* Fin de cafes */
+
+
+}
