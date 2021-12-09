@@ -64,10 +64,11 @@ border: 2px solid white;
 }
 
 .contenedor {
+  position: relative;
   max-width: 800px;
   margin: auto;
   /* margin-bottom: 70px; */
-  position: relative;
+
 }
 
 .background-general{
