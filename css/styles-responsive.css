@@ -5,7 +5,7 @@
   /* portada */
 
   .titulo {
-    font-size: 45px;
+    font-size:45px;
     margin-top:0;
   }
 
@@ -24,7 +24,9 @@
   /* fin de portada */
 
   /* cafes */
-
+  .cafes{
+    text-align: center;
+  }
   /* Fin de cafes */
 
 
