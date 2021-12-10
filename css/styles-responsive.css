@@ -47,6 +47,7 @@
 
   .contenedor-cafe-b {
     margin: 0;
+    position: static;
   }
 
   .cafe li { 
@@ -102,15 +103,14 @@
     margin: 0;
   }
   /* selectorees de atributos  */
-  input[Type="text"], input[Type="email"] {
+  input[type="text"], input[type="email"] {
     font-size: 16px;
     padding: 5px;
   }
 
-  input[Type="radio"], input[Type="checkbox"] {
+  input[type="radio"], input[type="checkbox"] {
     position: relative;
     top: 3px;
     zoom: 1.5px;
-
-
+  }
 }
