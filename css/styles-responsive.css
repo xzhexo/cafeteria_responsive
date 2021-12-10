@@ -31,7 +31,7 @@
   /* Fin de cafes */
 
   .right, .left {
-    float:none;
+    float: none;
     position: static;
   }
 
@@ -57,4 +57,4 @@
   .title-b {
     margin: 0;
   }
-}
+} 
