@@ -30,5 +30,31 @@
   }
   /* Fin de cafes */
 
+  .right, .left {
+    float:none;
+    position: static;
+  }
 
+  .contenedor.cafe-a {
+    position: static;
+    padding: 0;
+  }
+
+  .cafe.granoscafe {
+    height: auto;
+    position: static;
+  }
+
+  .contenedor-cafe-b {
+    margin: 0;
+  }
+
+  .cafe li { 
+    list-style: none;
+
+  }
+
+  .title-b {
+    margin: 0;
+  }
 }
