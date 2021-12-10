@@ -356,8 +356,3 @@ i{
 }
 
 
-/* cualquier dimension que sea menos a 767 cambiamos el footer */
-
-@media screen and (max-width:767px) {
-  
-}

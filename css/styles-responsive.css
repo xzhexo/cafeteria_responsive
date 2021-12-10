@@ -62,6 +62,10 @@
 /* cualquier dimension que sea menos a 767 cambiamos el footer */
 
 @media screen and (max-width:767px) {
+
+  textarea  {
+    width: 100%;
+  }
   .footer .contenedor {
     display: block;
   }
@@ -76,9 +80,37 @@
     margin: 0 auto;  
   }
 
+  .generos label {
+    font-size: 16px;
+  }
+
+  .intereses label {
+    display: block;
+    font-size: 16px;
+  }
   .formulario {
     display: block;
     width: 300px;
     margin: 0 auto;
   }
+
+  .formulario .button {
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0,0, 0,0.24);
+  }
+  .col1 { 
+    margin: 0;
+  }
+  /* selectorees de atributos  */
+  input[Type="text"], input[Type="email"] {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  input[Type="radio"], input[Type="checkbox"] {
+    position: relative;
+    top: 3px;
+    zoom: 1.5px;
+
+
 }
