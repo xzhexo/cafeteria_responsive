@@ -354,3 +354,10 @@ i{
 .tabla{
   padding: 50px 0;
 }
+
+
+/* cualquier dimension que sea menos a 767 cambiamos el footer */
+
+@media screen and (max-width:767px) {
+  
+}
