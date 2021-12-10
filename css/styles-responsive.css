@@ -58,3 +58,27 @@
     margin: 0;
   }
 } 
+
+/* cualquier dimension que sea menos a 767 cambiamos el footer */
+
+@media screen and (max-width:767px) {
+  .footer .contenedor {
+    display: block;
+  }
+
+  .footer.img {
+    width: 250px;
+  }
+
+  .contacto {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;  
+  }
+
+  .formulario {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+}
