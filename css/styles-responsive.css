@@ -166,6 +166,10 @@
   .portada .contenedor{
     position: static;
   }
+
+  .portada.button{
+    display: block;
+  }
   .menu{
     /* border: 1px solid tomato; */
     position: absolute;

@@ -1,7 +1,8 @@
-let burgerButton = document.getElementById('burger-button');
+let burguerButton = document.getElementById("burguer-button");
+let menu = document.getElementById("menu");
 
-let menu = document.getElementById('menu');
-
-burgerButton.addEventListener('touchstart', function() {
-  menu.classList.toggle('active')
+// burguerButton contiene el span con el icono
+// burguerButton.addEventListener('que evento', 'que deseo hacer');
+burguerButton.addEventListener("touchstart", function () {
+  menu.classList.toggle("active");
 });
