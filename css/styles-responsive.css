@@ -10,6 +10,7 @@
   left: 20px;
   top: 20px;
   z-index: 3;
+  display: none;
 }
 
 
@@ -158,30 +159,36 @@
 @media screen and (max-width: 500px) {
 
   /* PORTADA */
+  .portada .button {
+    display: block;
+  }
+
+  .burguer-button {
+    display: block;
+  }
+  
   .portada .contenedor {
     position: static;
   }
+  /*PAGINA DE PRECIOS*/
+  .header {
+    position: static;
+  }
+  .header .contenedor {
+    position: static;
+  }
+  .titulo-precio {
+    font-size: 32px;
+  }
 
- /* precios */
-.header{
-  position: static;
-}
+  .titulo-precio img {
+    width: 60px;
+  }
 
-.header .contenedor{
-  position: static;
-}
-
-.titulo-precio{
-  font-size: 32px;
-}
-
-.titulo-precio img {
-  width: 60px;
-
-}
+  /* FIN PAGINA DE PRECIOS*/
   .menu {
     /* border: 1px solid tomato; */
-    position:absolute;
+    position: fixed;
     left: -100%;
     top: 0;
     right:0;
