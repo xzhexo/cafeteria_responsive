@@ -1,5 +1,19 @@
 /* 768 para tablets y esta dentro para los 800xp en los que trabajaremos */
 
+.burger-button { 
+  width: 40px;
+  background: #dd944c;
+  border-radius: 50%;
+  line-height: 35px;
+  height: 40px;
+  text-align: center;
+  display: inline-block;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
 @media screen and (max-width: 800px) {
   
   /* portada */
@@ -64,9 +78,11 @@
 
 @media screen and (max-width:767px) {
 
+  
   textarea  {
     width: 100%;
   }
+  
   .footer .contenedor {
     display: block;
   }
@@ -117,6 +133,9 @@
 
 /*  para tablets pequeñas  */
 @media screen and (max-width:650px) {
+  
+  
+
   .header{
     text-align: center;
     
@@ -144,7 +163,28 @@
 /*  celulares */
 
 @media screen and (max-width:500px) {
+  .portada .contenedor{
+    position: static;
+  }
+  .menu{
+    /* border: 1px solid tomato; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -100%;
+    bottom: 0;
+    background-color: rgba(156,84,12,.8);
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    transition: .3s;
+  }
 
+  active{
+    left: 0;
+  }
   .menu li {
     display: block;
     margin: 0;
@@ -157,6 +197,10 @@
     border-top: 1px solid white;
   }
 
+  .menu ul{
+    /*  hace que los items home, cafe y precios tomen todo el añcho de la pantalla */
+    flex: 1;  
+  }
   .portada {
     text-align: center;
   }
@@ -166,13 +210,14 @@
   
   }
 
-.title-a {
-  font-size: 15px;
-}
+  .title-a {
+  
+    font-size: 15px;
+  } 
 
-/* cafes */
+  /* cafes */
 
-.cafe img{
+  .cafe img{
   width: 200px;
-}
+  }
 }
