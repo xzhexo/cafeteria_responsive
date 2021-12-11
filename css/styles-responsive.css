@@ -161,6 +161,24 @@
   .portada .contenedor {
     position: static;
   }
+
+ /* precios */
+.header{
+  position: static;
+}
+
+.header .contenedor{
+  position: static;
+}
+
+.titulo-precio{
+  font-size: 32px;
+}
+
+.titulo-precio img {
+  width: 60px;
+
+}
   .menu {
     /* border: 1px solid tomato; */
     position:absolute;
